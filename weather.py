@@ -15,11 +15,18 @@ try:
         temp = latest.get('tempf', 'N/A')
         humidity = latest.get('humidity', 'N/A')
         windspeed = latest.get('windspeedmph', 'N/A')
+        feels_like = latest.get('feelsLike', 'N/A')
+        rain_today = latest.get('dailyrainin', 'N/A')
 
-        print(f"🌡️ {temp}°F  💧 {humidity}%  💨 {windspeed} mph")
+        print(f"🌡️  Temp: {temp}°F (Feels like {feels_like}°F)")
+        print(f"💧 Humidity: {humidity}%")
+        print(f"💨 Wind: {windspeed} mph")
+        print(f"🌧️  Rain Today: {rain_today} in")
     else:
         print("No valid data available from the API.")
 except requests.exceptions.RequestException as e:
     print(f"Error fetching data from Ambient Weather API: {e}")
 except KeyError as e:
     print(f"Unexpected data format: Missing key {e}")
+except requests.exceptions.Timeout:
+    print("Request timed out.")
