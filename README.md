@@ -2,6 +2,8 @@
 
 A lightweight KDE-friendly weather popup using data from your personal Ambient Weather station.
 
+![Alt text](assets/weather-bug.png)
+
 ## Features
 
 - Fetches live weather data from Ambient Weather API
