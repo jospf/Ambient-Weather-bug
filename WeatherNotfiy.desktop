@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Weather Notifier
+# Add in path to kde-weather.py
+Exec=python3 /home/.........kde-weather.py
+Icon=weather-clear
+Terminal=false
+Type=Application
+Categories=Utility;

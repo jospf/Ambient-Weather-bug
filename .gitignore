@@ -176,3 +176,4 @@ cython_debug/
 config.py
 weather2.py
 Makefile
+WeatherNotify2.desktop
