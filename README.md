@@ -7,7 +7,7 @@ A lightweight KDE-friendly weather popup using data from your personal Ambient W
 - Fetches live weather data from Ambient Weather API
 - Shows desktop notifications via `notify-send`
 - Clickable `.desktop` launcher
-- Optional persistent system tray app (PyQt5)
+
 
 ## Setup
 
